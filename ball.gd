@@ -30,8 +30,8 @@ func _process(delta):
 			speedVector = speedVector*1.01
 			if (speedVector.length()>maxSpeed): # force max speed
 				speedVector = maxSpeed/speedVector.length()*speedVector
-		elif (collision.collider.is_in_group("Blocks")):
-			collision.collider.queue_free()
+		elif ('Block' in collision.collider.name):
+			collision.collider.hit()
 			speedVector = speedVector.bounce(collision.normal)
 		else:
 			speedVector = speedVector.bounce(collision.normal)

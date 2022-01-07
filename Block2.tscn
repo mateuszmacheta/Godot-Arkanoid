@@ -12,7 +12,7 @@ blueBlock = ExtResource( 5 )
 greenBlock = ExtResource( 3 )
 yellowBlock = ExtResource( 1 )
 pinkBlock = ExtResource( 4 )
-strength = 1
+strength = 2
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 3 )
