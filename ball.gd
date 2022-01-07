@@ -15,7 +15,7 @@ func _process(delta):
 	var collision = move_and_collide(speedVector * delta)
 	
 	if collision:
-		print('Speed: ' + str(speedVector.length()) + ' collider: ' + collision.collider.name)
+		#print('Speed: ' + str(speedVector.length()) + ' collider: ' + collision.collider.name)
 		if(collision.collider.name == 'Racket'):
 			var racket = collision.collider
 			var distance = racket.position.x - position.x
